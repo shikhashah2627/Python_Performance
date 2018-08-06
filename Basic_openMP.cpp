@@ -1,7 +1,7 @@
-#include<stdlib.h>
 #include<iostream>
+#include<stdlib.h>
 #include<math.h>
-//#include<comp.h>
+#include"omp.h"
 
 using namespace std;
 
@@ -23,7 +23,7 @@ double integrate(double st, double en, int div, double (*f)(double) ) {
     return localRes;
 }
 
-int main(int argc, char *argv[]) {
+int main(int argc, char **argv) {
     if (argc == 1) {
         cerr << "Usage " << argv[0] << "start end divisions \n";
         exit(1);
@@ -35,8 +35,22 @@ int main(int argc, char *argv[]) {
     end = atof(argv[2]);
     divisions = atoi(argv[3]);
 
-    double finalRes = integrate(start, end, divisions, testf);
+    int N = omp_get_max_threads(); // get the number of threads for parallel region.
+    divisions = (divisions / N) * N;
+    double step = ( end - start ) / divisions;
+    double finalRes = 0;
+    
+#pragma omp parallel 
+{
+    int localDiv = divisions / N;
+    int ID = omp_get_thread_num();
+    double localStart = start + ID * localDiv * step;
+    double localEnd = localStart + localDiv * step;
+    finalRes += integrate(localStart,localEnd,localDiv,testf);
+}
 
     cout << finalRes << endl;
+    //cout << "Hello from thread " << omp_get_thread_num () << endl;
+
     return 0;
-}
+}    

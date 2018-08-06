@@ -1,0 +1,42 @@
+('Parallel time=', 3.7626779079437256)
+Round  1  completed. with matrix size of  100 x 100
+('Parallel time=', 3.5768680572509766)
+Round  2  completed. with matrix size of  100 x 100
+('Parallel time=', 3.9666481018066406)
+Round  3  completed. with matrix size of  100 x 100
+('Parallel time=', 3.6960010528564453)
+Round  4  completed. with matrix size of  100 x 100
+('Parallel time=', 3.4523370265960693)
+Round  5  completed. with matrix size of  100 x 100
+('Parallel time=', 3.7500460147857666)
+Round  6  completed. with matrix size of  100 x 100
+('Parallel time=', 3.483839988708496)
+Round  7  completed. with matrix size of  100 x 100
+('Parallel time=', 4.552675008773804)
+Round  8  completed. with matrix size of  100 x 100
+('Parallel time=', 3.8077640533447266)
+Round  9  completed. with matrix size of  100 x 100
+('Parallel time=', 3.5864338874816895)
+Round  10  completed. with matrix size of  100 x 100
+('Parallel time=', 433.3789498806)
+Round  1  completed. with matrix size of  400 x 400
+('Parallel time=', 346.73057198524475)
+Round  2  completed. with matrix size of  400 x 400
+('Parallel time=', 210.59325408935547)
+Round  3  completed. with matrix size of  400 x 400
+('Parallel time=', 198.5443820953369)
+Round  4  completed. with matrix size of  400 x 400
+('Parallel time=', 203.77154922485352)
+Round  5  completed. with matrix size of  400 x 400
+('Parallel time=', 199.56008887290955)
+Round  6  completed. with matrix size of  400 x 400
+('Parallel time=', 199.06551480293274)
+Round  7  completed. with matrix size of  400 x 400
+('Parallel time=', 235.7086479663849)
+Round  8  completed. with matrix size of  400 x 400
+('Parallel time=', 274.0672490596771)
+Round  9  completed. with matrix size of  400 x 400
+('Parallel time=', 276.52723503112793)
+Round  10  completed. with matrix size of  400 x 400
+('Parallel time=', 122617.35700011253)
+Round  1  completed. with matrix size of  1000 x 1000
