@@ -28,13 +28,13 @@ double **B = new double*[M];
 double **C = new double*[M];
 
 // pointer initialization.
-for(int i = 0; i< L; i++) {
+for(int i = 0; i<= L; i++) {
     A[i] = new double[K];
 }
-for(int i = 0; i < M; i++) {
+for(int i = 0; i<= M; i++) {
     B[i] = new double[L];
 }
-for(int i = 0; i< M; i++) {
+for(int i = 0; i<= M; i++) {
     C[i] = new double[K];
 }
 
@@ -49,10 +49,16 @@ matrix_creation(L,M,B);
             C[i][j] = 0;
             for(int k=0; k < L; k++) {
                 double x = A[i][k] * B[k][j];
-                C[i][j] += (int)x%1000;
+                C[i][j] += (int)x%100;
                // cout << i << "," << j << C[i][j];
             }
         }
     }
+
+    // for(int i=0; i<K; i++) {
+    //     for (int j=0;j<M;j++) {
+    //         cout << i << "," << j << C[i][j] << "\n";
+    //     }
+    // }
 }
    

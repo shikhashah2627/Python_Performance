@@ -33,6 +33,7 @@ import multiprocessing
 from itertools import starmap, izip, repeat, imap
 from operator import mul
 import timeit
+import numpy as np
 
 def calc_row_of_product_matrix(a_row, b, zip=zip):
     '''Calculate a row of the product matrix P = A * B
@@ -79,4 +80,5 @@ def random_v(K=1000,min=-1000,max=1000):
 
 def random_m(N=1000, K=1000):
     '''Generates random matrix. Returns list of list of integers.'''
-    return [random_v(K) for n in range(N)]
+    #return [random_v(K) for n in range(N)]
+    return np.random.randint(0,10,size=(K,N))

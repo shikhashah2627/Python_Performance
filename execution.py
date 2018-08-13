@@ -1,6 +1,8 @@
 from matrix import multimatrix, itermatrix, random_m, iterate_results
 import matrix
 import timeit
+import time
+import sys
 
 
 if __name__ == '__main__':
@@ -21,13 +23,10 @@ if __name__ == '__main__':
     print listprod, "iter test OK" 
     '''
 
-    t = timeit.Timer("p = itermatrix(a) * itermatrix(a)", "from matrix import itermatrix, random_m; a = random_m(500, 500)")
+
+    t = timeit.Timer("p = itermatrix(a) * itermatrix(b)", "from matrix import itermatrix, random_m; a = random_m(500, 500); b = random_m(500,500)")
     print "iterable product time:", t.timeit(number=1)
-    from matrix import itermatrix, random_m; a = random_m(500, 500)
-    t = timeit.Timer("p = itermatrix(a) * itermatrix(a); iterate_results(p)", "from matrix import itermatrix, random_m, iterate_results; a = random_m(500, 500)")
+    t = timeit.Timer("p = itermatrix(a) * itermatrix(b); iterate_results(p)", "from matrix import itermatrix, random_m, iterate_results; a = random_m(500, 500); b = random_m(500,500)")
     print "list product time:", t.timeit(number=1)
-
-    t = timeit.Timer("p = multimatrix(a) * multimatrix(a)", "from matrix import multimatrix, random_m, iterate_results; a = random_m(500, 500)")
-print "multi product time:", t.timeit(number=1)
-
-t = timeit.Timer()
+    t = timeit.Timer("p = multimatrix(a) * multimatrix(b)", "from matrix import multimatrix, random_m, iterate_results; a = random_m(500, 500);b = random_m(500,500)")
+    print "multi product time:", t.timeit(number=1) 
