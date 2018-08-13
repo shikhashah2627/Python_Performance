@@ -1,0 +1,210 @@
+bash_script_for_CPP_Programs.sh: line 9: 26035 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  1  completed. with matrix size of  100 x 100
+bash_script_for_CPP_Programs.sh: line 9: 26038 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  2  completed. with matrix size of  100 x 100
+bash_script_for_CPP_Programs.sh: line 9: 26041 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  3  completed. with matrix size of  100 x 100
+bash_script_for_CPP_Programs.sh: line 9: 26049 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  4  completed. with matrix size of  100 x 100
+bash_script_for_CPP_Programs.sh: line 9: 26052 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  5  completed. with matrix size of  100 x 100
+bash_script_for_CPP_Programs.sh: line 9: 26055 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  6  completed. with matrix size of  100 x 100
+bash_script_for_CPP_Programs.sh: line 9: 26058 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  7  completed. with matrix size of  100 x 100
+bash_script_for_CPP_Programs.sh: line 9: 26061 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  8  completed. with matrix size of  100 x 100
+bash_script_for_CPP_Programs.sh: line 9: 26064 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  9  completed. with matrix size of  100 x 100
+bash_script_for_CPP_Programs.sh: line 9: 26067 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  10  completed. with matrix size of  100 x 100
+bash_script_for_CPP_Programs.sh: line 9: 26075 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  1  completed. with matrix size of  400 x 400
+bash_script_for_CPP_Programs.sh: line 9: 26078 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  2  completed. with matrix size of  400 x 400
+bash_script_for_CPP_Programs.sh: line 9: 26081 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  3  completed. with matrix size of  400 x 400
+bash_script_for_CPP_Programs.sh: line 9: 26084 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  4  completed. with matrix size of  400 x 400
+bash_script_for_CPP_Programs.sh: line 9: 26087 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  5  completed. with matrix size of  400 x 400
+bash_script_for_CPP_Programs.sh: line 9: 26090 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  6  completed. with matrix size of  400 x 400
+bash_script_for_CPP_Programs.sh: line 9: 26093 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  7  completed. with matrix size of  400 x 400
+bash_script_for_CPP_Programs.sh: line 9: 26101 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  8  completed. with matrix size of  400 x 400
+bash_script_for_CPP_Programs.sh: line 9: 26104 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  9  completed. with matrix size of  400 x 400
+bash_script_for_CPP_Programs.sh: line 9: 26107 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  10  completed. with matrix size of  400 x 400
+bash_script_for_CPP_Programs.sh: line 9: 26110 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  1  completed. with matrix size of  1000 x 1000
+bash_script_for_CPP_Programs.sh: line 9: 26113 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  2  completed. with matrix size of  1000 x 1000
+bash_script_for_CPP_Programs.sh: line 9: 26116 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  3  completed. with matrix size of  1000 x 1000
+bash_script_for_CPP_Programs.sh: line 9: 26119 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  4  completed. with matrix size of  1000 x 1000
+bash_script_for_CPP_Programs.sh: line 9: 26127 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  5  completed. with matrix size of  1000 x 1000
+bash_script_for_CPP_Programs.sh: line 9: 26130 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  6  completed. with matrix size of  1000 x 1000
+bash_script_for_CPP_Programs.sh: line 9: 26133 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  7  completed. with matrix size of  1000 x 1000
+bash_script_for_CPP_Programs.sh: line 9: 26136 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  8  completed. with matrix size of  1000 x 1000
+bash_script_for_CPP_Programs.sh: line 9: 26139 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  9  completed. with matrix size of  1000 x 1000
+bash_script_for_CPP_Programs.sh: line 9: 26142 Segmentation fault      (core dumped) ./$tests ${var} ${var}+${var} ${var}
+Round  10  completed. with matrix size of  1000 x 1000
+
+real	0m0.232s
+user	0m0.231s
+sys	0m0.000s
+Round  1  completed. with matrix size of  100 x 300
+
+real	0m0.221s
+user	0m0.208s
+sys	0m0.011s
+Round  2  completed. with matrix size of  100 x 300
+
+real	0m0.228s
+user	0m0.224s
+sys	0m0.004s
+Round  3  completed. with matrix size of  100 x 300
+
+real	0m0.217s
+user	0m0.215s
+sys	0m0.003s
+Round  4  completed. with matrix size of  100 x 300
+
+real	0m0.216s
+user	0m0.213s
+sys	0m0.004s
+Round  5  completed. with matrix size of  100 x 300
+
+real	0m0.229s
+user	0m0.223s
+sys	0m0.006s
+Round  6  completed. with matrix size of  100 x 300
+
+real	0m0.219s
+user	0m0.215s
+sys	0m0.004s
+Round  7  completed. with matrix size of  100 x 300
+
+real	0m0.215s
+user	0m0.215s
+sys	0m0.000s
+Round  8  completed. with matrix size of  100 x 300
+
+real	0m0.214s
+user	0m0.206s
+sys	0m0.007s
+Round  9  completed. with matrix size of  100 x 300
+
+real	0m0.216s
+user	0m0.205s
+sys	0m0.011s
+Round  10  completed. with matrix size of  100 x 300
+
+real	0m5.184s
+user	0m5.177s
+sys	0m0.007s
+Round  1  completed. with matrix size of  400 x 600
+
+real	0m6.110s
+user	0m6.099s
+sys	0m0.009s
+Round  2  completed. with matrix size of  400 x 600
+
+real	0m5.387s
+user	0m5.379s
+sys	0m0.007s
+Round  3  completed. with matrix size of  400 x 600
+
+real	0m5.373s
+user	0m5.361s
+sys	0m0.011s
+Round  4  completed. with matrix size of  400 x 600
+
+real	0m5.313s
+user	0m5.293s
+sys	0m0.019s
+Round  5  completed. with matrix size of  400 x 600
+
+real	0m5.149s
+user	0m5.133s
+sys	0m0.017s
+Round  6  completed. with matrix size of  400 x 600
+
+real	0m5.222s
+user	0m5.205s
+sys	0m0.015s
+Round  7  completed. with matrix size of  400 x 600
+
+real	0m5.057s
+user	0m5.033s
+sys	0m0.025s
+Round  8  completed. with matrix size of  400 x 600
+
+real	0m5.043s
+user	0m5.035s
+sys	0m0.009s
+Round  9  completed. with matrix size of  400 x 600
+
+real	0m5.113s
+user	0m5.101s
+sys	0m0.011s
+Round  10  completed. with matrix size of  400 x 600
+
+real	1m10.853s
+user	1m10.774s
+sys	0m0.048s
+Round  1  completed. with matrix size of  1000 x 1200
+
+real	1m16.498s
+user	1m16.384s
+sys	0m0.071s
+Round  2  completed. with matrix size of  1000 x 1200
+
+real	1m16.964s
+user	1m16.895s
+sys	0m0.053s
+Round  3  completed. with matrix size of  1000 x 1200
+
+real	1m24.083s
+user	1m23.505s
+sys	0m0.208s
+Round  4  completed. with matrix size of  1000 x 1200
+
+real	1m7.790s
+user	1m7.693s
+sys	0m0.091s
+Round  5  completed. with matrix size of  1000 x 1200
+
+real	1m18.509s
+user	1m18.356s
+sys	0m0.085s
+Round  6  completed. with matrix size of  1000 x 1200
+
+real	1m19.745s
+user	1m19.571s
+sys	0m0.108s
+Round  7  completed. with matrix size of  1000 x 1200
+
+real	1m6.897s
+user	1m6.819s
+sys	0m0.070s
+Round  8  completed. with matrix size of  1000 x 1200
+
+real	1m18.512s
+user	1m18.378s
+sys	0m0.088s
+Round  9  completed. with matrix size of  1000 x 1200
+
+real	1m21.026s
+user	1m20.625s
+sys	0m0.170s
+Round  10  completed. with matrix size of  1000 x 1200
