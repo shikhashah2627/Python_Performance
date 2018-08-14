@@ -57,6 +57,7 @@ class multimatrix(list):
 class itermatrix(list):
 
     @staticmethod
+    #used because need to pass this function as a parameter to _mul_ function
     def sumprod(row, col, sum=sum, starmap=starmap, mul=mul):
         '''Returns sumproduct of two vectors.'''
         return sum(starmap(mul,zip(row,col)))

@@ -24,9 +24,9 @@ if __name__ == '__main__':
     '''
 
 
-    t = timeit.Timer("p = itermatrix(a) * itermatrix(b)", "from matrix import itermatrix, random_m; a = random_m(500, 500); b = random_m(500,500)")
+    t = timeit.Timer("p = itermatrix(a) * itermatrix(b)", "from matrix import itermatrix, random_m; a = random_m(10, 10); b = random_m(10, 10)")
     print "iterable product time:", t.timeit(number=1)
-    t = timeit.Timer("p = itermatrix(a) * itermatrix(b); iterate_results(p)", "from matrix import itermatrix, random_m, iterate_results; a = random_m(500, 500); b = random_m(500,500)")
+    t = timeit.Timer("p = itermatrix(a) * itermatrix(b); iterate_results(p)", "from matrix import itermatrix, random_m, iterate_results; a = random_m(10, 10); b = random_m(10, 10)")
     print "list product time:", t.timeit(number=1)
-    t = timeit.Timer("p = multimatrix(a) * multimatrix(b)", "from matrix import multimatrix, random_m, iterate_results; a = random_m(500, 500);b = random_m(500,500)")
+    t = timeit.Timer("p = multimatrix(a) * multimatrix(b)", "from matrix import multimatrix, random_m; a = random_m(10, 10);b = random_m(10, 10)")
     print "multi product time:", t.timeit(number=1) 

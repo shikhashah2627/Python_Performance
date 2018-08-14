@@ -18,7 +18,7 @@ double matrix_creation(int rows, int columns, double **matrix) {
     for (int i = 0; i < rows; i ++) {
         for (int j = 0; j < columns; j++) {
             matrix[i][j] = rand()%10;
-            //cout << "(" << i << "," << j << ")" << matrix[i][j] << endl;
+            cout << "(" << i << "," << j << ")" << matrix[i][j] << endl;
         }
     }
     return matrix[rows][columns];
@@ -34,27 +34,29 @@ double matrix_creation(int rows, int columns, double **matrix) {
 void * worker( void* arg )
 {
     int i, j, k, portion_size, row_start, row_end;
-    double sum;
-    cout << "inside worker" << endl;
+    double sum = 0;
+    //cout << "inside worker" << endl;
     int tid = *(int*)arg; // get the thread ID assigned sequentially.
     portion_size = size / num_threads;
-    cout << size << endl;
+    //cout << "size - " <<size << endl;
+    //cout << "thread id is : " << tid;
     row_start = tid * portion_size;
-    cout << row_start << endl;
+    //cout << "row_start - " << row_start << endl;
     row_end = (tid+1) * portion_size;
-    cout << row_end << endl;
+    //cout << "row_end - " << row_end << endl;
 
-    for (i = row_start; i < row_end; ++i) { // hold row index of 'matrix1'
+    for (i = row_start-portion_size; i < row_end; ++i) { // hold row index of 'matrix1'
         for (j = 0; j < size; ++j) { // hold column index of 'matrix2'
             sum = 0; // hold value of a cell
             /* one pass to sum the multiplications of corresponding cells
             in the row vector and column vector. */
             for (k = 0; k < size; ++k) { 
                 sum += A[ i ][ k ] * B[ k ][ j ];
+               // cout << "in K loop " << i  << " , " << k << " , " << j;
             }
             C[i][j] = sum;
-            cout<<"matrix values" << endl;
-            cout << C[i][j]<<endl;
+           // cout<<"matrix values : " << endl;
+           // cout << C[i][j]<<endl;
         }
     }
 }
@@ -81,13 +83,13 @@ B = new double*[M];
 C = new double*[M];
 
 // pointer initialization.
-for(int i = 0; i< L; i++) {
+for(int i = 0; i<= L; i++) {
     A[i] = new double[K];
 }
-for(int i = 0; i < M; i++) {
+for(int i = 0; i <= M; i++) {
     B[i] = new double[L];
 }
-for(int i = 0; i< M; i++) {
+for(int i = 0; i<= M; i++) {
     C[i] = new double[K];
 }
 
@@ -120,6 +122,11 @@ pthread_join( threads[i], NULL );
 }
 gettimeofday( &tend, NULL );
 
+// for (int i = 0; i < K; i++) {
+//     for (int j = 0; j < K; j++) {
+//         cout << "( " << i << ","<<j <<" ) "<< C[i][j];
+//     }
+// }
 exectime = (tend.tv_sec - tstart.tv_sec) * 1000.0; // sec to ms
 exectime += (tend.tv_usec - tstart.tv_usec) / 1000.0; // us to ms   
 
