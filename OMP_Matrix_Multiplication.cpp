@@ -1,6 +1,7 @@
 #include<stdlib.h>
 #include<iostream>
 #include<ctime>
+#include <omp.h>
 
 using namespace std;
 
@@ -9,7 +10,7 @@ double matrix_creation(int rows, int columns, double **matrix) {
     for (int i = 0; i < rows; i ++) {
         for (int j = 0; j < columns; j++) {
             matrix[i][j] = rand()%10;
-            //cout << "(" << i << "," << j << ")" << matrix[i][j] << endl;
+            cout << "(" << i << "," << j << ")" << matrix[i][j] << endl;
         }
     }
     return matrix[rows][columns];
@@ -43,22 +44,25 @@ C[K][M] = {0.0};
 matrix_creation(K,L,A);
 matrix_creation(L,M,B);
 
+double x;
 #pragma omp parallel for collapse(2)
     for (int i=0; i < K; i++) {
         for(int j=0; j < M; j++) {
             C[i][j] = 0;
             for(int k=0; k < L; k++) {
-                double x = A[i][k] * B[k][j];
-                C[i][j] += (int)x%100;
+                //double x = A[i][k] * B[k][j];
+                x = A[i][k] * B[k][j];
+                //C[i][j] += (int)x%100;
+                C[i][j] += x;
                // cout << i << "," << j << C[i][j];
             }
         }
     }
 
-    // for(int i=0; i<K; i++) {
-    //     for (int j=0;j<M;j++) {
-    //         cout << i << "," << j << C[i][j] << "\n";
-    //     }
-    // }
+    for(int i=0; i<K; i++) {
+        for (int j=0;j<M;j++) {
+            cout << i << "," << j << C[i][j] << "\n";
+        }
+    }
 }
    
