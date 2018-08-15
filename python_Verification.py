@@ -8,5 +8,5 @@ if __name__ == '__main__':
     X = np.random.randint(0,10,size=(K,L))
     Y = np.random.randint(0,10,size=(L,M))
 
-    #Z = np.matmul(X,Y)
+    #Z = np.matmul(X,Y) // can work only upto 1500 * 1500 big matrix
     Z = np.dot(X,Y)

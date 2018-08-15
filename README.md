@@ -9,6 +9,6 @@ To run Python :
 Run : python python_matrix_multiplication.py 2 2 2
 
 To run C++ :
-Compile : g++ -pthread -std=c++11 Pthreads_Matrix_Multiplication.cpp
-Run : 
+Compile : g++ -pthread -std=c++11 Pthreads_Matrix_Multiplication.cpp -o threads_matrix_mult
+Run : ./threads_matrix_mult
 

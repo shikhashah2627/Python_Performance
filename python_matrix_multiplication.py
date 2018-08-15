@@ -17,8 +17,11 @@ def eval_func_tuple(row_args):
 class multimatrix(list):
 
     def __mul__(self,b,zip=zip,repeat=repeat):
-        pool = multiprocessing.Pool(multiprocessing.cpu_count())
+        pool = multiprocessing.Pool(a)
+        #pool = multiprocessing.Pool(multiprocessing.cpu_count())
         return pool.map(eval_func_tuple, zip(repeat(calc_row_of_product_matrix), self, repeat(b)))
+
+a = int(sys.argv[4])
 
 
 if __name__ == '__main__':
@@ -27,7 +30,7 @@ if __name__ == '__main__':
     M = int(sys.argv[3])
     X = np.random.randint(0,10,size=(K,L))
     Y = np.random.randint(0,10,size=(L,M))
-
+   
     #print X
     #print Y
     final_matrix = multimatrix(X) * multimatrix(Y)
