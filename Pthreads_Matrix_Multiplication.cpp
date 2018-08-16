@@ -18,7 +18,7 @@ double matrix_creation(int rows, int columns, double **matrix) {
     for (int i = 0; i < rows; i ++) {
         for (int j = 0; j < columns; j++) {
             matrix[i][j] = rand()%10;
-            cout << "(" << i << "," << j << ")" << matrix[i][j] << endl;
+            //cout << "(" << i << "," << j << ")" << matrix[i][j] << endl;
         }
     }
     return matrix[rows][columns];
@@ -113,7 +113,7 @@ tid = &x;
 for ( i = 0; i < num_threads; ++i ) { 
     //tid = &i;  
     *tid = i;
-    cout << "finally calling output"<<endl;
+    //cout << "finally calling output"<<endl;
     pthread_create( &threads[i], NULL, worker, (void *)tid );
 }
 
@@ -127,8 +127,8 @@ gettimeofday( &tend, NULL );
 //         cout << "( " << i << ","<<j <<" ) "<< C[i][j];
 //     }
 // }
-exectime = (tend.tv_sec - tstart.tv_sec) * 1000.0; // sec to ms
-exectime += (tend.tv_usec - tstart.tv_usec) / 1000.0; // us to ms   
+//exectime = (tend.tv_sec - tstart.tv_sec) * 1000.0; // sec to ms
+//exectime += (tend.tv_usec - tstart.tv_usec) / 1000.0; // us to ms   
 
 //printf( "Number of MPI ranks: 0\tNumber of threads: %d\tExecution time:%.3lf sec\n",
         //num_threads, exectime/1000.0);
